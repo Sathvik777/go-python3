@@ -11,8 +11,7 @@ func TestThreadInitialization(t *testing.T) {
 	PyEval_InitThreads()
 
 	assert.True(t, PyEval_ThreadsInitialized())
-
-	PyEval_ReInitThreads()
+	
 }
 
 func TestGIL(t *testing.T) {
